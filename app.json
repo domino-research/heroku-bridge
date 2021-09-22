@@ -1,0 +1,34 @@
+{
+  "name": "Bridge",
+  "description": "Serve models declaratively from your model registry.",
+  "repository": "https://github.com/dominodatalab/domino-research",
+  "logo": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/bridge-at-night_1f309.png",
+  "keywords": ["mlops", "mlflow"],
+  "stack": "container",
+  "env": {
+    "BRIDGE_MLFLOW_REGISTRY_URI": {
+      "description": "URL for MLflow Registry"
+    },
+    "BRIDGE_MLFLOW_TRACKING_URI": {
+      "description": "URL for MLflow Registry"
+    },
+    "BRIDGE_DEPLOY_KIND": {
+      "description": "'sagemaker' or 'local'",
+      "default": "local"
+    },
+    "BRIDGE_ANALYTICS_OPT_OUT": {
+      "description": "Set to 1 to opt out of Mixpanel analytics.",
+      "default": "0"
+    },
+    "AWS_ACCESS_KEY_ID": {
+      "description": "Credentials for accessing model artifacts and Sagemaker (if applicable)"
+    },
+    "AWS_SECRET_ACCESS_KEY": {
+      "description": "Credentials for accessing model artifacts and Sagemaker (if applicable)"
+    },
+    "AWS_DEFAULT_REGION": {
+      "description": "AWS region for Sagemaker deployments (if applicable).",
+      "default": "us-east-2"
+    }
+  }
+}
