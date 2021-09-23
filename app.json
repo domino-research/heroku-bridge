@@ -13,8 +13,8 @@
       "description": "URL for MLflow Registry"
     },
     "BRIDGE_DEPLOY_KIND": {
-      "description": "'sagemaker' or 'local'",
-      "default": "local"
+      "description": "'sagemaker' or 'localhost'",
+      "default": "localhost"
     },
     "BRIDGE_ANALYTICS_OPT_OUT": {
       "description": "Set to 1 to opt out of Mixpanel analytics.",
